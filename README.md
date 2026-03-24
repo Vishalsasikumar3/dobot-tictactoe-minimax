@@ -6,12 +6,6 @@
 
 ---
 
-## Demo
-
-[![Midterm 1 Demo](https://img.youtube.com/vi/SA_hQXTBo4I/0.jpg)](https://youtube.com/shorts/SA_hQXTBo4I)
-
----
-
 ## Overview
 
 The Dobot Magician Lite (Serial: `DT-MGL-4R002-01E`) is programmed to play a physical game of Tic-Tac-Toe against a human opponent. The robot draws the 3×3 grid, executes its moves by physically drawing 'X' or 'O' symbols with a pen, and uses the **Minimax algorithm** to guarantee optimal play. The human player draws their symbol on the board and the system tracks game state via keyboard input with a planned CV integration via `opencv_to_gemini.py`.
@@ -104,7 +98,7 @@ On startup:
 
 - Minimax guarantees optimal play but requires the internal board state to be accurate — human input errors bypass the strategy entirely
 - Z-height calibration is critical: too high = no ink, too low = pen drag causes movement errors
-- Defining a user-set coordinate datum at startup (top-left corner jog) is far more robust than hardcoded absolute positions — adapts to any table setup
+- Defining a user-set coordinate datum at startup is far more robust than hardcoded absolute positions — adapts to any table setup
 - Replacing CV board detection with keyboard input simplified deployment but removed the autonomous sensing capability
 
 ---
@@ -115,4 +109,3 @@ On startup:
 - **Instructor:** Prof. Mostafa Yourdkhani
 - **University:** Arizona State University, Tempe AZ
 - **Semester:** Fall 2025
-- **Grade:** 30 / 40
